@@ -1,0 +1,54 @@
+Rick Data Examples:
+
+/// Winning = attribute that checks all Available players
+Game by players
+{
+    Table:{
+        T0:[] //Nothing, Empty Table
+        T1:[(6,Spade),(7,Spade),(10,Heart)] //Flop
+        T2:[(6,Spade),(7,Spade),(10,Heart),] //Turn appended
+        T3:[(6,Spade),(7,Spade),(10,Heart),] //River appended
+            }
+
+    Deven:{
+        T0:{
+            Bet: 100
+            Cards: (A,Spade),(A,Club)
+            Note: LittleBlind + Stay in
+            CurrentPot: 100
+        }
+        T1: {
+            Bet: 200
+            Cards: (A,Spade),(A,Club)
+            Note: ??
+            CurrentPot:200  //Automattic
+            Winning: True
+        }
+    }
+    Zoey:{
+        T0:{
+            Bet: 100
+            Note: BigBlind
+            CurrentPot: 200
+        }
+        T1: {
+            Bet: 
+            Cards: (K,Spade),(6,Heart)
+            Note: ?? 
+            CurrentPot:200  //Automattic
+            Winning: False
+        }
+    }
+    Rick:
+        T0:{
+            Null
+            Cards: ?
+        }
+        T1:{
+            Bet:
+            Cards:
+            Note:
+        }
+    Claudia:
+
+}
